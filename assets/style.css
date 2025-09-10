@@ -1,0 +1,377 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #121212;
+}
+
+/* Parte 1 --MENU- HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background:#7c7c7c;;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 100;
+  user-select: none;
+  
+}
+
+.logo {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'ParfumerieDecor', cursive;
+  color: #ffffff;
+}
+
+.h-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'ParfumerieDecor', cursive;
+  transition: color 0.3s ease;
+}
+
+.h-link:hover {
+  color: #00d824;
+}
+
+.menu {
+  margin-left: auto;
+  display: flex;
+  gap: 24px;
+}
+
+.menu a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.menu a:hover {
+  background-color:  #7a9a92 ;
+  color: rgb(255, 255, 255);
+}
+
+.menu a.active {
+  background-color: #7a9a92;
+  color: white;
+  pointer-events: none;
+}
+
+/* PT2- PG DA HOME */
+.home {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 80px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5) saturate(1.2);
+  z-index: -3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(29, 28, 28, 0.1);
+  z-index: -1;
+}
+
+
+.content-center h2 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-style: italic;
+  max-width: 600px;
+  color: #0aff02;
+}
+/* PT2- botao*/
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.btn.spotify {
+  background-color: #81b71a;
+}
+
+.btn.spotify:hover {
+  background-color: #617e2c;
+  box-shadow: 0 6px 12px #617e2c;
+}
+
+.btn.youtube {
+  background-color: #ff0000;
+}
+
+.btn.youtube:hover {
+  background-color: #b31919;
+  box-shadow: 0 8px 16px #b31919;
+}
+
+/* Pt3- BIOGRAFIA */
+biografia-content {
+  max-width: 900px;
+  margin: 500px auto 80px;
+  padding: 0 20px;
+  color: #f1efef;
+}
+
+.bio-intro {
+  display: flex;
+  flex-wrap: column;;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.bio-text {
+ 
+  flex-basis: 700px;
+  font-size: 2.4 rem;
+  line-height: 1.6;
+  font-family: 'Georgia', serif;
+  color: #4a7c59;
+}
+
+.bio-media {
+ 
+   flex-basis: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bio-foto img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(110, 88, 73, 0.35);
+  object-fit: cover;
+  height: 250px;
+}
+
+.bio-video iframe {
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(110, 88, 73, 0.25);
+  min-height: 215px;
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: 00 auto;
+  padding: 20px;
+}
+
+/* Pt4-- ÁLBUNS --*/
+.content {
+  max-width: 960px;
+  margin: 100px auto 50px;
+  padding: 0 20px;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  color: #0a5a22; 
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.albums-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.album-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(216, 212, 198, 0.2);
+  width: 280px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.album-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(4, 238, 43, 0.4);
+}
+
+.album-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(209, 182, 182, 0.4);
+}
+
+.album-card h3 {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  color: #8fd40e;
+}
+
+.album-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+/* lista */
+.tracklist {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  color: #d6d9c6;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.tracklist li {
+  margin-bottom: 6px;
+}
+
+.tracklist li a {
+  color: #a3b18a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.tracklist li a:hover {
+  color: #617a44;
+  text-decoration: underline;
+}
+
+/*Pt5turnes*/
+.tour- {
+  background-color: #fffdfb;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(95, 85, 72, 0.15);
+  color: #888582;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.subititulo {
+  font-size: 2rem;
+  color: #2f4f4f;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.video-card {
+  flex: 1 1 320px;
+  max-width: 560px;
+  background-color: #e6e1d7;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(90, 80, 70, 0.12);
+  text-align: center;
+}
+
+.video-card h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #5a7d7c;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*Pt5turnes*/
+footer {
+  background-color: #000000;
+  padding: 16px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+footer li {
+  margin: 0 10px;
+}
